@@ -1,0 +1,320 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+
+:root{
+    --main-color:#DA2C32;
+    --light-color:#666;
+    --light-bg:#eee;
+    --white:#fff;
+    --black:#303030;
+    --border:.1rem solid var(--light-color);
+    --box-shadow:0 .5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    list-style: none;
+    
+}
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 10rem;
+}
+
+body
+{
+    background-color: var(--light-bg);
+}
+
+section{
+    width: 100%;
+    padding: 1.5rem 9%;
+    
+}
+
+.header{
+    margin-bottom: 2rem;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    left: 0;
+    right: 0;
+    box-shadow: var(--box-shadow);
+    z-index: 1000;
+}
+.header .nav1 .flex{
+    background: var(--black);
+}
+.header .nav2 .flex{
+    background: var(--light-bg);
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.header .nav .flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center; 
+    
+}
+
+.header .nav1 .flex a{
+    font-size: 1.8rem;
+    text-decoration: none;
+    color: var(--white);
+    padding: .5rem 1rem;
+    transition: all .3s ease-in-out;
+}
+.header .nav1 .flex a:hover{
+    background: var(--main-color);
+}
+.header .nav1 .flex a:last-child{
+    background: var(--white);
+    color: var(--light-color);
+}
+.header .nav1 .flex a i{
+    color: var(--black);
+}
+
+/* section nav2 */
+
+#menu{
+    font-size: 1.8rem;
+    display: none;
+}
+
+.header .nav2 .flex ul{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.header .nav2 .flex ul li{
+    display: inline-block;
+    padding: 1rem 2.5rem;
+    text-align: left;
+}
+.header .nav2 .flex ul li a{
+    width: 100%;
+    font-size: 1.7rem;
+    text-decoration: none;
+    color: var(--light-color);  
+    padding: .8rem 1.5rem;
+    transition: all .3s ease-in-out;
+    
+}
+.header .nav2 .flex ul li a i{
+    font-size: 1.5rem;
+}
+.header .nav2 .flex ul li a:hover{
+    background: var(--main-color);
+    color: var(--white);
+}
+.header .nav2 .flex ul li ul{
+    position: absolute;
+    display: block;
+    background: var(--white);
+    text-align: left;
+    padding: 0;
+    display: none; 
+    transition: all .3s ease-in-out;
+}
+.header .nav2 .flex ul li:hover ul
+{
+    display: block;
+}
+.header .nav2 .flex ul li ul li{
+  display: block;
+}
+
+
+/* post property start here */
+
+    .property-details{
+        width: 100%;
+        padding: 1.5rem 3rem;
+        background: var(--white);
+
+    }
+    .property-details h3{
+        text-align: center;
+        font-size: 3rem;
+        font-weight: 3rem;
+        color: var(--light-color);
+        margin-bottom: 1rem;
+    }
+    .property-details .box{
+        width: 100%;
+        margin-bottom: 2rem;
+    }
+    .property-details .box p{
+        font-size: 1.7rem;
+        color: var(--light-color);
+
+    }
+    .property-details .box p span{
+        color: var(--main-color);
+    }
+    .property-details .box .input{
+        width: 100%;
+        font-size: 1.7rem;
+        border: var(--border);
+        padding: 1rem 2rem;
+        color: var(--light-color);
+    }
+
+    .property-details .flex {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 2rem;
+    }
+
+
+    .property-details .flex .box .check-type{
+        display: block;
+        
+    }
+    .property-details .flex .box .check-type .checkbox{
+        width: 22px;
+        height: 22px;
+        border: var(--border);
+    }
+    .property-details .flex .box .check-type label{
+        font-size: 1.7rem;
+        color: var(--light-color);
+        margin-left: 1rem;
+    }
+    .property-details .buttons{
+        width: 100%;
+        margin: 1.5rem 0;
+    }
+    .property-details .buttons .btn{
+        width: 100%;
+        display: inline-block;
+        background: var(--main-color);
+        padding: 1rem 0;
+        font-size: 1.8rem;
+        color: var(--light-bg);
+        transition: all .3s ease-in-out;
+    }
+    .property-details .buttons .btn:hover{
+        background: #e23e44;
+        color: var(--light-bg);
+    }
+
+/* post property end here */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.footer{
+    background: var(--black);
+    margin-top: 2.5rem;
+   
+}
+.footer .flex{
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr;
+    align-items: center;
+    grid-gap: 4rem;
+
+}
+.footer .flex .box{
+    width: 100%;
+    margin-bottom: 1rem ;
+}
+.footer .flex .box a{
+    display: block;
+    text-decoration: none;
+    font-size: 1.7rem;
+    color: var(--white);
+    line-height: 2.5;
+    transition: all .3s ease-in-out;
+    
+}
+.footer .flex .box a i{
+    margin-right: 1rem;
+    color: var(--main-color);
+}
+.footer .flex .box a:hover{
+    color: var(--main-color);
+    text-decoration: underline;
+}
+
+.credit{
+    font-size: 1.8rem;
+    color: var(--white);
+    padding: 2rem 0;
+    border-top: var(--border);
+    text-align: center;
+}
+.credit span{
+    color: var(--main-color);
+}
+
+
+/* media queries */
+@media (max-width:1080px) {
+    html{
+        font-size: 58%;
+    }
+}
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;
+    }
+    section{
+        padding: 0 5%;
+        
+    }
+    
+}
+
+@media (max-width:850px) {
+    html{
+        font-size: 52%;
+    }
+    .header .nav1{
+        height: 6rem;
+    }
+    .header .nav2{
+        height: 5rem;
+    }
+    
+}
